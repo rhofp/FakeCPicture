@@ -1,0 +1,96 @@
+= FakePicture
+Creado por Rodrigo Francisco <rhodfra@gmail.com>
+Version 1.0, 24.02.2021 
+//:sectnums: 
+:toc: 
+:toc-placement!:
+:toclevels: 4                                          
+:toc-title: Contenido
+// Ruta base de las imagenes
+:imagesdir: ./README.assets/ 
+// Resaltar sintaxis
+:source-highlighter: pygments
+// Iconos para entorno local
+ifndef::env-github[:icons: font]
+// Iconos para entorno github
+ifdef::env-github[]
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+++++
+<p align="center">
+  <img width="200" src="./README.assets/photos.png">
+</p>
+++++
+
+FakePicture es una aplicación en la cual puedes subir a nuestra nube tus 
+imágenes más importantes.
+
+[source,sh]
+Abril, 2021
+Autor: Francisco Pablo Rodrigo <rhodfra@gmail.com> 
+
+:toc:
+
+.Algunas características
+* Sistema de logeo
+* Subir imágenes a la nube en tiempo real
+
+[IMPORTANT]
+====
+Debido a las limitaciones de hardware en las que se probó la aplicación se 
+utilizó el simulador que gastará menos recursos, en este caso: 
+_iPhone SE (2nd generation)_, por lo cual se invita a EL MISMO dispositivo.
+
+image::xcode.png[]
+====
+
+*Usuarios de prueba:*
+
+[source,sh]
+r@gmail.com
+diplo123#
+
+== Capturas
+
+=== Registro
+
+Registrando a un usuario, al terminar el proceso de registro se pasa a la vista 
+principal para que pueda subir imágenes.
+
+image:fake-picture-01-register.gif[]
+
+=== Subir imágenes
+
+Subida de imágenes a la nube.
+
+[NOTE]
+En principio parece ser tardarse un poco, pero es debido a los recursos de la 
+computadora en que fue probado.
+
+image:fake-picture-02-upload-image.gif[]
+
+=== Vista de detalles
+
+Para la vista de detalle simplemente se amplia la imagen dado que ningún otro 
+dato sobre la imagen era relevante.
+
+image:fake-picture-03-zoom-and-upload.gif[]
+
+=== Múltiples usuarios
+
+Las siguientes imágenes nuestra que se pueden subir N imágenes para N usuarios.
+
+image:fake-picture-04-login-logout.gif[]
+
+Los dos usuarios tienen el mismo nombre, _Rodrigo Francisco_, sin embargo, se 
+puede ver que se ingresa mediante distintos correos:
+
+* r@gmail.com
+* t@gmail.com
+
+image:fake-picture-05-multiple-users.gif[]
